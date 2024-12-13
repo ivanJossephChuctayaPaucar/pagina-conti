@@ -35,7 +35,7 @@ export default {
         "fade-up": {
           "0%": {
             opacity: "0",
-            transform: "translateY(20px)",
+            transform: "translateY(30px)",
           },
           "100%": {
             opacity: "1",
@@ -46,10 +46,21 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "slide-in": {
+          "0%": { 
+            opacity: "0",
+            transform: "translateY(40px)"
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        }
       },
       animation: {
-        "fade-up": "fade-up 0.5s ease-out",
-        "fade-in": "fade-in 0.3s ease-out",
+        "fade-up": "fade-up 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
+        "fade-in": "fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+        "slide-in": "slide-in 1s cubic-bezier(0.4, 0, 0.2, 1)",
       },
     },
   },

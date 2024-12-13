@@ -24,13 +24,13 @@ const News = () => {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-slide-in">
-          <span className="inline-block bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block bg-purple-400/10 text-purple-500 px-4 py-2 rounded-full text-sm font-medium mb-4">
             Actualidad
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Últimas Noticias
           </h2>
-          <p className="text-text-light max-w-2xl mx-auto">
+          <p className="text-gray-500 max-w-2xl mx-auto">
             Mantente al día con las últimas novedades y eventos de nuestra universidad
           </p>
         </div>
@@ -49,13 +49,13 @@ const News = () => {
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium mb-2">
+              <span className="inline-block bg-purple-400/10 text-purple-500 px-3 py-1 rounded-full text-sm font-medium mb-2">
                 {item.category}
               </span>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-secondary transition-colors duration-300">
+              <h3 className="text-xl font-bold mb-2 text-primary group-hover:text-purple-500 transition-colors duration-300">
                 {item.title}
               </h3>
-              <p className="text-text-light">{item.date}</p>
+              <p className="text-gray-500">{item.date}</p>
             </article>
           ))}
         </div>
